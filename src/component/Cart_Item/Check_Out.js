@@ -21,7 +21,7 @@ const CheckOut = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="check_mainList">
                     <h4>Nakshi Katha 06</h4>
 
                     <div className="detills_items">
@@ -44,9 +44,16 @@ const CheckOut = () => {
 
 
                     <h4>Quantity</h4>
-                    <div>
-                        <Button type="primary">submit now </Button>
+                    <div className="Quantity">
+                        <img  src={Image.down}/>
+                        <h4>1</h4>
+                        <img  src={Image.up}/>
 
+                    </div>
+
+                    <div className="check_buttons">
+                        <Button className="check_button"><img className="check_outCart" src={Image.cart2}/>ADD TO CART</Button>
+                        <Button className="save_button"><img className="save_cart" src={Image.love}/>Wishlist</Button>
                     </div>
 
 

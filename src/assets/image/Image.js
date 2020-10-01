@@ -24,6 +24,8 @@ import playStore from "./playstore.png"
 import email from "./ic_email.png"
 import  cibo from "./cibo_logo.png"
 import beg from "./beg.jpg"
+import up from "./ic_go.png"
+import down from "./ic_back.png"
 
 
 const Image={
@@ -52,7 +54,9 @@ const Image={
     playStore,
     email,
     cibo,
-    beg
+    beg,
+    up,
+    down
 
 
 
