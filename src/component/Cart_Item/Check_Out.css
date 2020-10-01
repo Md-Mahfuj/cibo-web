@@ -1,0 +1,42 @@
+
+.CheckOut_main{
+}
+
+.CheckOut_main_item{
+    display: flex;
+}
+
+
+.detills_items{
+    display: flex;
+}
+.detills_itemsTwo{
+    margin-left:30px;
+}
+
+
+
+.check_img{
+    width:450px;
+    height:500px;
+}
+
+.img_items{
+    display: flex;
+    margin-top:10px;
+    /*flex-direction: row;*/
+    /*flex-wrap: nowrap;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*align-content: stretch;*/
+}
+
+.check_imgs{
+
+    margin-left: 10px;
+    width:100px;
+    height: 100px;
+    margin-bottom:20px;
+
+
+}

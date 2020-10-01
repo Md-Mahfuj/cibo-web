@@ -1,0 +1,163 @@
+
+.footer_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    background-color: black;
+}
+
+.fb_con {
+    margin-left:30px;
+}
+
+.footer_descation {
+    align-items: center;
+    justify-content: center;
+    color: #f9f9f9;;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+
+
+}
+
+.socail_icon{
+    display: flex;
+
+}
+
+.email_section {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom:5px;
+    margin-left:10px;
+}
+
+.email_icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+
+.live_chat{
+    margin-left: 10px;
+    width: 240px;
+    height: 54px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ed535c;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    border-radius:10px;
+}
+
+.live_chat_title{
+    margin-top:20px;
+
+    color: #fbfbfb;
+
+}
+
+.text-style{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: 0.26px;
+    color: #ffffff;
+}
+
+.text-title{
+    font-family: Lato;
+    font-size:20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: 0.26px;
+    color: #f9f9f9;
+}
+.mobile_divice_enable{
+    display: none;
+}
+.donload_section{
+    margin-top:40px;
+}
+.Download-title{
+    margin-left:20px;
+    padding: 5px;
+}
+.appstor_section{
+
+}
+
+
+
+@media only screen and (max-device-width : 768px){
+    .footer_web_section{
+        display: none;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+    .footer_main{
+        display: block;
+
+    }
+    .web_logo_footer{
+        margin-top: 25px;
+        margin-left: 130px;
+        margin-bottom: 10px;
+
+    }
+
+
+    .footer_descation{
+        margin-left:30px;
+    }
+    .socail_icon{
+        margin-left:80px;
+    }
+    .Navigate_section{
+        margin-top:50px;
+        margin-left:80px;
+    }
+    .Choose_section{
+        margin-top:50px;
+        margin-left:80px;
+
+    }
+    .text-title{
+        font-size:30px;
+        line-height: 1.19;
+        letter-spacing: 0.30px;
+    }
+    .text-title{
+        font-size: 25px;
+    }
+
+
+
+
+    .donload_section{
+        margin-left:50px;
+    }
+
+}

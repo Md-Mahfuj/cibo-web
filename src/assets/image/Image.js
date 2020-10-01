@@ -10,13 +10,20 @@ import cart3 from "./icons8-favorite-cart-64.png"
 import BD from "./sd6tl907mg451.jpg"
 import menu from "./menu.png"
 import menu1 from "./menu (1).png"
-
 import silder from "./slider.png"
 import silder1 from "./slider1.png"
 import silder2 from "./slider2.png"
 import prime from "./prime-deal.png"
 import friends from "./friends-deal.png"
-// import drop from "./drop.png"
+import drop from "./ic_dropdown.png"
+import fb from "./ic_fb.png"
+import twitter from "./ic_twitter.png"
+import instragram from "./ic_instragram.png"
+import appStore from "./appstore.png"
+import playStore from "./playstore.png"
+import email from "./ic_email.png"
+import  cibo from "./cibo_logo.png"
+import beg from "./beg.jpg"
 
 
 const Image={
@@ -37,6 +44,15 @@ const Image={
     silder2,
     prime,
     friends,
+    drop,
+    fb,
+    twitter,
+    instragram,
+    appStore,
+    playStore,
+    email,
+    cibo,
+    beg
 
 
 

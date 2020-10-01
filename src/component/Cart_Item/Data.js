@@ -35,7 +35,24 @@ const Shop=[
         spePrice:"10",
         url:"www.mahfuj.com"
 
-    }, {
+    },
+    {
+
+        title:'bangladesh is big city',
+        price:"BDT-200",
+        spePrice:"100",
+        url:"www.mahfuj.com"
+
+    },
+    {
+
+        title:'bangladesh is big city',
+        price:"BDT-200",
+        spePrice:"100",
+        url:"www.mahfuj.com"
+
+    },
+    {
 
         title:'bangladesh is big city',
         price:"BDT-200",
@@ -44,11 +61,57 @@ const Shop=[
 
     },
 
-]
+];
+
+const Shop1=[
+    {
+
+        title:'Inda  is big city',
+        price:"BDT-50",
+        spePrice:"100",
+        url:"www.mahfuj.com"
+
+    },
+    {
+
+        title:'Inda  is big city',
+        price:"BDT-50",
+        spePrice:"100",
+        url:"www.mahfuj.com"
+
+    },
+    {
+
+        title:'Inda  is big city',
+        price:"BDT-50",
+        spePrice:"100",
+        url:"www.mahfuj.com"
+
+    },
+
+    {
+
+        title:'Inda  is big city',
+        price:"BDT-50",
+        spePrice:"100",
+        url:"www.mahfuj.com"
+
+    },
+    {
+
+        title:'Inda  is big city',
+        price:"BDT-50",
+        spePrice:"100",
+        url:"www.mahfuj.com"
+
+    },
+];
+
 
 
 const Data ={
-    Shop
+    Shop,
+    Shop1
 }
 export default Data;
 

@@ -14,11 +14,10 @@ const ShopCart=(props)=>{
             {
                 props.projectList.map((item,i)=>
                     <a href={"https://www.facebook.com/md.mahfuj.1272010"}
-                       className={"main"}
+                       className={"main_section"}
                     >
                         <Card
                             hoverable
-                            style={{ width: 210 }}
 
 
                             className={"cart"}
@@ -35,8 +34,7 @@ const ShopCart=(props)=>{
                             </div>
 
                             <div className={"main_cart_price"}>
-                                <h4>{item.price}</h4>
-                                <h4 className={"special_price"}>{item.spePrice}</h4>
+                                <h6 >{item.price}</h6>
 
                             </div>
 
