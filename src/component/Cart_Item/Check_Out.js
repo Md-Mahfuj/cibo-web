@@ -7,7 +7,7 @@ import {Button} from "antd";
 const CheckOut = () => {
     return (
         <div style={{marginTop: 5}}
-             className="CheckOut_main"
+             className="CheckOut_main container"
 
         >
             <div className="CheckOut_main_item">
