@@ -8,6 +8,10 @@ import {Button} from "antd";
 
 const Category =(props)=>{
     return(
+
+
+
+
         <div className="Category">
             {
                 props.cate.map((item,i)=>
@@ -17,7 +21,9 @@ const Category =(props)=>{
                         <Button
                             type="primary"
                             className="category_button"
-                        >{item.name}
+                        >
+
+                            {item.name}
 
                         </Button>
 

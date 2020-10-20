@@ -9,8 +9,13 @@ import {data} from "../../component/Category/data"
 import Category from "../../component/Category/Category_Cart";
 
 
-const Presentation = () => {
+const Presentation = (props) => {
     const [cate, setCate] = useState(data);
+
+
+
+
+
     return (
         <div className="container Presentation">
 

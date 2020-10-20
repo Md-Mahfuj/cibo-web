@@ -26,6 +26,7 @@ import  cibo from "./cibo_logo.png"
 import beg from "./beg.jpg"
 import up from "./ic_go.png"
 import down from "./ic_back.png"
+import  product1 from "./product1.jpg"
 
 
 const Image={
@@ -56,7 +57,10 @@ const Image={
     cibo,
     beg,
     up,
-    down
+    down,
+    product1,
+
+
 
 
 

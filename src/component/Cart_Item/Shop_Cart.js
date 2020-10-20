@@ -2,6 +2,7 @@ import React,{useState} from "react"
 import "./Shop_Cart.css"
 import { Card } from 'antd';
 import Data from "./Data"
+import Image from "../../assets/image/Image"
 
 const { Meta } = Card;
 
@@ -25,7 +26,7 @@ const ShopCart=(props)=>{
                         >
                             <div  className={"main_cart"}>
                                 <img className={"Cart_imag"}
-                                     src={"https://scontent.fdac25-1.fna.fbcdn.net/v/t1.0-9/79776706_1077879655892660_6715394724091396096_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_ohc=EP142FYhh3kAX8QPcCJ&_nc_ht=scontent.fdac25-1.fna&oh=125390c03e6aff92fdb34a7c0f225168&oe=5F80D762"}/>
+                                     src={Image.product1}/>
                             </div>
                             <div className={"title"}>
                                 <h5 >

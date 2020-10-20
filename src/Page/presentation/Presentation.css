@@ -1,19 +1,19 @@
 
 .Presentation {
     margin-top: 20px;
-    background-color: #61dafb;
+    background-color:#F7F8FA;
     display: flex;
 }
 .top-category{
     background-color:#e6e8eb;
-    width:250px;
+    width:265px;
 
 }
 
 .Category_section {
     width:25%;
     margin-left:-13px;
-    background-color: orange;
+    /*background-color: orange;*/
 }
 
 .Presentation_img_section {

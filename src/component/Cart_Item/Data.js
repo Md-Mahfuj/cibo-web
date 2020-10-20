@@ -66,7 +66,7 @@ const Shop=[
 const Shop1=[
     {
 
-        title:'Inda  is big city',
+        title:'bang  is big city',
         price:"BDT-50",
         spePrice:"100",
         url:"www.mahfuj.com"
@@ -74,7 +74,7 @@ const Shop1=[
     },
     {
 
-        title:'Inda  is big city',
+        title:'bang  is big city',
         price:"BDT-50",
         spePrice:"100",
         url:"www.mahfuj.com"
@@ -82,7 +82,7 @@ const Shop1=[
     },
     {
 
-        title:'Inda  is big city',
+        title:'bang  is big city',
         price:"BDT-50",
         spePrice:"100",
         url:"www.mahfuj.com"
@@ -91,7 +91,7 @@ const Shop1=[
 
     {
 
-        title:'Inda  is big city',
+        title:'bang  is big city',
         price:"BDT-50",
         spePrice:"100",
         url:"www.mahfuj.com"
@@ -99,8 +99,8 @@ const Shop1=[
     },
     {
 
-        title:'Inda  is big city',
-        price:"BDT-50",
+        title:'bang',
+        price:"BDT-00",
         spePrice:"100",
         url:"www.mahfuj.com"
 
