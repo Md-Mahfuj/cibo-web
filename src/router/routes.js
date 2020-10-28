@@ -9,7 +9,7 @@ export default class Routes extends Component {
             <Router history={history}>
                 <Switch>
                     <Route path="/" exact component={App} />
-                    <Route path="/Home" component={CheckPage} />
+                    <Route path="/Home/:id" component={CheckPage} />
                     {/*<Route path="/about" component={About} />*/}
 
                 </Switch>
