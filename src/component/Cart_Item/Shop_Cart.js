@@ -3,18 +3,18 @@ import "./Shop_Cart.css"
 import { Card } from 'antd';
 import Data from "./Data"
 import Image from "../../assets/image/Image"
-
+import { useHistory } from "react-router";
 const { Meta } = Card;
 
 
 
 const ShopCart=(props)=>{
-
-    return(
+    const history = useHistory();    return(
         <div className={"main"}>
             {
                 props.projectList.map((item,i)=>
-                    <a href={"http://localhost:3000/Home"}
+                    <a
+                       onClick={()=>{history.push(`/Home/1223`)}}
                        className={"main_section"}
                     >
                         <Card

@@ -6,9 +6,10 @@ import Layout from "../Layout/Layout";
 
 
 
-const CheckPage=()=>{
+const CheckPage=({ match })=>{
     return(
         <Layout>
+          <p>{JSON.stringify(match.params.id)}</p>
             <CheckOut/>
         </Layout>
 
