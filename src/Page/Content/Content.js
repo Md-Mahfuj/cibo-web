@@ -25,7 +25,7 @@ const Content=(props)=>{
 
 
 
-            <CheckOut/>
+
 
 
 

@@ -5,6 +5,7 @@ import {Button} from "antd";
 
 
 const CheckOut = (props) => {
+    const {product} = props;
     return (
         <div style={{marginTop: 5}}
              className="CheckOut_main container"
@@ -22,7 +23,7 @@ const CheckOut = (props) => {
                 </div>
 
                 <div className="check_mainList">
-                    <h4>Nakshi Katha 06</h4>
+                    <h4>{product.title}</h4>
 
                     <div className="detills_items">
                         <div>
@@ -40,7 +41,7 @@ const CheckOut = (props) => {
 
                     </div>
 
-                    <h5>BTD:200</h5>
+                    <h5>BTD:{product.price}</h5>
 
 
                     <h4>Quantity</h4>
