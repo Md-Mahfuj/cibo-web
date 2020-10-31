@@ -9,14 +9,19 @@ const { Meta } = Card;
 
 
 const ShopCart=(props)=>{
+    const [count, setCount] = useState(0);
     const history = useHistory();
+
+    const nextPage = ()=>{
+        history.push(`/product/123`)
+    }
 
     return(
         <div className={"main"}>
             {
                 props.projectList.map((item,i)=>
                     <a
-                       onClick={()=>{history.push(`/Home/123`)}}
+                       onClick={nextPage}
                        className={"main_section"}
                     >
                         <Card
