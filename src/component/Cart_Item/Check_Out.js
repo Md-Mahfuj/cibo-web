@@ -4,7 +4,7 @@ import Image from "../../assets/image/Image"
 import {Button} from "antd";
 
 
-const CheckOut = () => {
+const CheckOut = (props) => {
     return (
         <div style={{marginTop: 5}}
              className="CheckOut_main container"

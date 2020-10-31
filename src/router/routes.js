@@ -3,6 +3,7 @@ import { Router, Switch, Route } from "react-router-dom";
 import App from "../App";
 import history from './history';
 import CheckPage from "../Page/CheckPage/Check_Page"
+import Desktop from "../Page/Desktop/index"
 export default class Routes extends Component {
     render() {
         return (
@@ -10,7 +11,7 @@ export default class Routes extends Component {
                 <Switch>
                     <Route path="/" exact component={App} />
                     <Route path="/Home/:id" component={CheckPage} />
-                    {/*<Route path="/about" component={About} />*/}
+                    <Route path="/Desktop" component={Desktop} />
 
                 </Switch>
             </Router>

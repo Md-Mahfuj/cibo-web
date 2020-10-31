@@ -3,12 +3,15 @@ import Data from "../../component/Cart_Item/Data"
 import "./Home.css"
 import Image from "../../assets/image/Image"
 import search from '../../assets/image/search.png'
+import { useHistory } from "react-router";
+
 import ShopCart from "../../component/Cart_Item/Shop_Cart"
 import ShoppingCartOutlined from "@ant-design/icons/lib/icons/ShoppingCartOutlined";
 
 
 const Home = () => {
     const [projectList, setShop] = useState(Data.Shop);
+    const history = useHistory();
     return (
         <div>
             <div className={"header_contact"}>
@@ -39,7 +42,10 @@ const Home = () => {
             <div className="container header_sectionTwo">
 
                 <div className="web_logo_section">
-                    <img className="web_logo" src={Image.w_logo}/>
+                    <img className="web_logo"
+                         src={Image.w_logo}
+                         onClick={()=>{history.push("/")}}
+                    />
 
                     <p className="short_description">
                         Short Description of<br/>

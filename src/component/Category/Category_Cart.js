@@ -1,4 +1,6 @@
 import React from "react"
+import { useHistory } from "react-router";
+
 
 import "./Category_Cart.css"
 import {Button} from "antd";
@@ -6,7 +8,10 @@ import {Button} from "antd";
 
 
 
+
 const Category =(props)=>{
+    const history = useHistory();
+
     return(
 
 
@@ -21,6 +26,7 @@ const Category =(props)=>{
                         <Button
                             type="primary"
                             className="category_button"
+                            onClick={()=>{history.push("/Desktop")}}
                         >
 
                             {item.name}
