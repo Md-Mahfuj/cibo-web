@@ -1,6 +1,6 @@
 
 const initialState={
-    Count:100
+    Count:99
 }
 
 

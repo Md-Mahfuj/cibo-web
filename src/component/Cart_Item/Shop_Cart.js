@@ -4,6 +4,7 @@ import { Card } from 'antd';
 import Data from "./Data"
 import Image from "../../assets/image/Image"
 import { useHistory } from "react-router";
+import {Link} from "react-router-dom"
 const { Meta } = Card;
 
 
@@ -12,18 +13,25 @@ const ShopCart=(props)=>{
     const [count, setCount] = useState(0);
     const history = useHistory();
 
-    const nextPage = ()=>{
-        history.push(`/product/123`)
+    const nextPage = (props)=>{
+        // history.push(`/product/123`)
+        // history.push(`/product/${item.id}`)
     }
+
 
     return(
         <div className={"main"}>
             {
-                props.projectList.map((item,i)=>
-                    <a
+                props.projectList.map((item)=>
+                    <Link
                        onClick={nextPage}
+                        to={`/product/${item.id}`}
+
                        className={"main_section"}
+                       key={item.id}
                     >
+
+
                         <Card
                             hoverable
 
@@ -48,7 +56,7 @@ const ShopCart=(props)=>{
 
 
                         </Card>
-                    </a>
+                    </Link>
                 )
             }
 

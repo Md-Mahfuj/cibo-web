@@ -1,9 +1,7 @@
 import React from "react"
 import "./Footer.css"
+
 import Image from '../../assets/image/Image'
-import appStore from "../../assets/image/appstore.png";
-import email from "../../assets/image/ic_email.png";
-import cibo from "../../assets/image/cibo_logo.png";
 
 
 const Footer = () => {
@@ -72,6 +70,9 @@ const Footer = () => {
                 </div>
 
             </div>
+
+
+
 
 
         </div>

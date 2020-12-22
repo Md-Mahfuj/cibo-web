@@ -31,6 +31,7 @@ const Presentation = (props) => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100 slider_img"
+
                             src={Image.silder}
                             alt="First slide"
                         />

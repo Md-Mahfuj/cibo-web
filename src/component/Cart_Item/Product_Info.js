@@ -1,5 +1,5 @@
 import React from "react"
-import "./Check_Out.css"
+import "./Product_Info.css"
 import Image from "../../assets/image/Image"
 import {Button} from "antd";
 
@@ -30,31 +30,38 @@ const CheckOut = (props) => {
                             <h5>Distributor: </h5>
                             <h5>Product Code: </h5>
                             <h5>Availability: </h5>
+                            <h5>BDT:</h5>
 
                         </div>
                         <div className="detills_itemsTwo">
                             <h5>Unknown</h5>
-                            <h5>Product 3 </h5>
-                            <h5>In Stock</h5>
+                            <h5>{product.color} </h5>
+                            <h5>{product.Stock}</h5>
+                            <h5>{product.price}</h5>
 
                         </div>
 
                     </div>
 
-                    <h5>BTD:{product.price}</h5>
 
+                    <div className="quantity-section">
+                        <h4 className="quantity-title">Quantity:</h4>
+                        <div className="Quantity">
+                            <img src={Image.down}/>
+                            <h4>30</h4>
+                            <img src={Image.up}/>
 
-                    <h4>Quantity</h4>
-                    <div className="Quantity">
-                        <img  src={Image.down}/>
-                        <h4>1</h4>
-                        <img  src={Image.up}/>
-
+                        </div>
                     </div>
+
 
                     <div className="check_buttons">
                         <Button className="check_button"><img className="check_outCart" src={Image.cart2}/>ADD TO CART</Button>
-                        <Button className="save_button"><img className="save_cart" src={Image.love}/>Wishlist</Button>
+                        {/*<Button className="check_button"><img className="check_outCart" src={Image.cart2}/>buy</Button>*/}
+
+
+                        {/*<Button className="save_button"><img className="save_cart" src={Image.love}/>Wishlist</Button>*/}
+
                     </div>
 
 

@@ -3,15 +3,33 @@ import Data from "../../component/Cart_Item/Data"
 import "./Home.css"
 import Image from "../../assets/image/Image"
 import search from '../../assets/image/search.png'
-import { useHistory } from "react-router";
+import {useHistory} from "react-router";
 
-import ShopCart from "../../component/Cart_Item/Shop_Cart"
-import ShoppingCartOutlined from "@ant-design/icons/lib/icons/ShoppingCartOutlined";
-
-
-const Home = () => {
+const Home = (props) => {
     const [projectList, setShop] = useState(Data.Shop);
+    const [loginClose,setLoginClose]=useState(false);
     const history = useHistory();
+
+    const Sideware = (props) => {
+        return (
+            <div className={loginClose ? 'login-dr-section':"login-dr-section-two"}>
+
+                <div className="loin-dr-contin">
+
+                    <img onClick={()=>setLoginClose(!loginClose)} className="loin-close-icon" src={Image.close}/>
+                    <h1> i am a student </h1>
+                    <h1> i am a student </h1>
+                    <h1> i am a student </h1>
+
+                </div>
+
+
+
+
+            </div>
+        );
+    }
+
     return (
         <div>
             <div className={"header_contact"}>
@@ -23,13 +41,13 @@ const Home = () => {
                 </div>
                 <div className="spece"></div>
                 <div
-                     className="help_section"
+                    className="help_section"
                 >
                     <img className="help_img" src={Image.help}/>
                     <h4 className="help_title">Help & More</h4>
                 </div>
                 <div
-                     className={"english"}
+                    className={"english"}
                 >
                     <img src={Image.BD} className={"country_img"}/>
                     <h4 className="country-title">Dhaka</h4>
@@ -38,13 +56,17 @@ const Home = () => {
 
             </div>
 
+            <Sideware/>
+
 
             <div className="container header_sectionTwo">
 
                 <div className="web_logo_section">
                     <img className="web_logo"
                          src={Image.w_logo}
-                         onClick={()=>{history.push("/")}}
+                         onClick={() => {
+                             history.push("/")
+                         }}
                     />
 
                     <p className="short_description">
@@ -61,29 +83,25 @@ const Home = () => {
                 <div className="account_section">
 
 
-
                     <a href={""} className="account"><img className="account_img" src={Image.love}/></a>
 
 
                     <a href={""} className="account-one cart_img">
                         <img className="account_img" src={Image.cart2}/>
 
-
                         {/*<ShoppingCartOutlined  className="cart_img"/>*/}
 
                     </a>
 
 
-                    <a href={""} className="account_two"> <img className="account_img" src={Image.account}/></a>
-
-
+                    <a onClick={()=>setLoginClose(!loginClose)} className="account_two"> <img className="account_img" src={Image.account}/></a>
 
 
                 </div>
 
             </div>
 
-            <div className="mobile_divice container">
+            <div className="mobile_divice-section container">
                 <img className="menu" src={Image.menu1}/>
 
                 <div className="search_section_mobile">
@@ -94,9 +112,6 @@ const Home = () => {
                 </div>
 
             </div>
-
-
-
 
 
             {/*<div style={{marginTop:100}} className="container">*/}

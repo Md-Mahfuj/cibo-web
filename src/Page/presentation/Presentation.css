@@ -1,9 +1,11 @@
 
 .Presentation {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     background-color:#F7F8FA;
     display: flex;
 }
+
+
 .top-category{
     background-color:#e6e8eb;
     width:265px;
@@ -93,7 +95,7 @@
     }
     .Presentation_img_section{
         width: 100%;
-        margin-top:10px;
+        margin-top:150px;
 
     }
     .slider_img{

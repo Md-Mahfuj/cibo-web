@@ -7,6 +7,48 @@
 
 
 }
+
+
+/*login drower section*/
+.login-dr-section{
+    width: 400px;
+    height: 100%;
+    float: right;
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    top: 0;
+}
+
+.login-dr-section-two{
+    width: 400px;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+
+.loin-dr-contin{
+    top:163px;
+    right: 0;
+    height: 100%;
+    width:250px;
+    position: absolute;
+    background-color: #ec3d47;
+}
+
+.loin-close-icon{
+    width: 24px;
+    height: 24px;
+    float: right;
+    cursor: pointer;
+}
+
 .menu{
     display: none;
     margin-top:35px;
@@ -15,7 +57,7 @@
     height:25px;
 }
 
-.mobile_divice{
+.mobile_divice-section{
     display: none;
 }
 
@@ -143,6 +185,7 @@
 .header_sectionTwo{
     display: flex;
     background-color: green;
+    /*position: sticky;*/
 }
 
 .web_logo{
@@ -258,6 +301,8 @@
 }
 
 .account_img{
+    cursor: pointer;
+
     width: 36px;
     height: 36px;
 }
@@ -391,18 +436,24 @@
     .header_contact{
         display: none;
     }
-    /*.header_sectionTwo{*/
-    /*    position: fixed;*/
-    /*}*/
+    .header_sectionTwo{
+        position: fixed;
+    }
 
-    .mobile_divice{
+
+
+
+    .mobile_divice-section{
 
         display:flex;
+        position:fixed ;
+        /*padding:0 0 50px 0;*/
 
         /*background-color:wheat;*/
     }
+
     .search_section_mobile{
-        margin-top: 23px;
+        margin-top:70px;
         margin-left: 30px;
         width:300px;
         height: 54px;
@@ -422,7 +473,8 @@
     }
     .menu{
         display: flex;
-        margin-top:35px;
+        margin-left: 5px;
+        margin-top:85px;
 
         width:25px;
         height:25px;

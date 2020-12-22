@@ -34,20 +34,35 @@
 .check_imgs{
 
     margin-left: 10px;
-    width:100px;
-    height: 100px;
-    margin-bottom:20px;
+    height: 84px;
+    object-fit: contain;
+    border: 1px solid red;
+
+    /*background-color: red;*/
+    margin-bottom:30px;
 
 
 }
 .check_mainList{
     margin-left: 20px;
 }
+
+.quantity-section{
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.quantity-title{
+    margin-top:7px;
+}
 .Quantity{
-    margin-top:12px;
+    margin-left:55px;
+
     display: flex;
     width: 148px;
-    height: 48px;
+    height: 40px;
+    /*padding: 0px 20px 0px 20px;*/
     border-radius: 8px;
     border: solid 1px #e7e7e7;
     background-color: #ffffff;
@@ -63,16 +78,14 @@
 }
 .check_button{
 
-    width: 152px;
-    height: 54px;
+    padding: 10px 110px 10px 110px;
     border-radius:8px;
-    border: none;
+    border: 16px;
     font-family: Lato;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.21;
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
@@ -81,11 +94,9 @@
 }
 
 .check_outCart{
-    margin-top:-5px;
+    margin-top:-3px;
     margin-right: 10px;
-
-    width: 20.3px;
-    height: 20.3px;
+    height: 20px;
 }
 
 
@@ -118,13 +129,16 @@
     }
 
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px){
+
+
     .CheckOut_main_item{
+        margin-top:80px;
         display: block;
     }
     .check_img{
         width:380px;
-        height:450px;
+        height:380px;
     }
     .check_buttons{
         display: flex;
@@ -134,6 +148,10 @@
         /*align-items: stretch;*/
         /*align-content: stretch;*/
         /*margin-bottom:-20px;*/
+    }
+    .img_items{
+        justify-content: center;
+
     }
 
 

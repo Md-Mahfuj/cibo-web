@@ -5,9 +5,15 @@
 }
 
 
+
+
+
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
     .Fashion_title{
         padding: 20px;
+        font-size:20px;
         text-align: center;
     }
 }

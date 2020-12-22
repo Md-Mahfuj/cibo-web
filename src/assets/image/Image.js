@@ -28,6 +28,9 @@ import up from "./ic_go.png"
 import down from "./ic_back.png"
 import  product1 from "./product1.jpg"
 
+import close from './close.png'
+import homeIcon from './home-icon.ico'
+
 
 const Image={
     country,
@@ -59,6 +62,8 @@ const Image={
     up,
     down,
     product1,
+    close,
+    homeIcon
 
 
 

@@ -8,14 +8,18 @@ import './index.css';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {Provider} from "react-redux";
+import store from "./store/reducers";
 
 ReactDOM.render(
+    <Provider store={store}>
 
-    <Router>
+<Router>
         <React.StrictMode>
             <Routes/>
         </React.StrictMode>
-    </Router>,
+    </Router>
+    </Provider>,
   document.getElementById('root')
 );
 
