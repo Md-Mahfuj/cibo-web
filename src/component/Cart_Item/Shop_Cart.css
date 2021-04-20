@@ -29,6 +29,9 @@
     background-color: #FFFFFF;
 }
 
+.main-shop-cart-title{
+    font-family: 'Roboto', sans-serif;
+}
 
 .Cart_imag {
     margin-top: 15px;
@@ -87,18 +90,24 @@
 }
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+@media only screen and (min-device-width : 320px) and (max-device-width :640px){
 
 
-    /*.main{*/
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*    flex-wrap: nowrap;*/
-    /*    flex-flow: row wrap;*/
-    /*}*/
+    .main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content:space-around;
+        flex-flow: row wrap;
+
+    }
 
      .cart{
-         width:170px;
+         /*width:170px;*/
+         width: 130px;
+         margin-left:5px;
+         /*justify-content:space-between;*/
+         /*background-color: red;*/
 
 
      }

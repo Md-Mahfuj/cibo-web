@@ -58,7 +58,7 @@ const Desktop = (props) => {
 };
 const mapStateToProps = (state) => {
     return {
-        Count: state.Count
+        Count: state.rootReducer.Count
     }
 
 }

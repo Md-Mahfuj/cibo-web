@@ -19,12 +19,17 @@ const Presentation = (props) => {
     return (
         <div className="container Presentation">
 
+             {/*start left side  category section */}
 
             <div className="Category_section">
                 <h4 className="top-category">Top Category</h4>
                 <Category cate={cate}/>
 
             </div>
+
+            {/*end left side  category section*/}
+
+            {/*start right side  carousel section */}
             <div className="Presentation_img_section">
 
                 <Carousel  >
@@ -66,8 +71,9 @@ const Presentation = (props) => {
                     </Carousel.Item>
                 </Carousel>
 
+                {/*end right side  carousel section*/}
 
-
+                {/*start two  sub promosion section */}
                 <div className="future_section" >
 
                    <div className="future_section_one">
@@ -83,6 +89,8 @@ const Presentation = (props) => {
                     </div>
 
                 </div>
+
+                 {/*end two sub promosion section*/}
 
             </div>
 

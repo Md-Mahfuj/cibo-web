@@ -1,0 +1,212 @@
+
+.checkout-page-main-section {
+    display: flex;
+    flex-direction: row;
+}
+.ck-order-section{
+    flex: 1;
+
+}
+
+.checkout-order-item-list {
+    width: 650px;
+    /*height: 604px;*/
+    border-radius: 8px;
+    box-shadow: 0 0 6px 0 rgba(40, 52, 107, 0.16);
+    background-color: #ffff
+}
+
+
+.order-summary-main-section {
+    /*margin-left: 50px;*/
+    width: 300px;
+
+}
+.ck-checkout-info-title{
+    margin-top: 15px;
+    margin-bottom:15px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.ck-total-price-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ck-box-shadow {
+    border-radius: 8px;
+    box-shadow: 0 0 6px 0 rgba(40, 52, 107, 0.16);
+    background-color: #ffff ;
+    padding-bottom: 20px;
+}
+
+.ck-total-text-section {
+    margin-left: 15px;
+    margin-top: 20px;
+
+}
+
+.ck-total-text-price-section {
+    margin-right: 20px;
+    margin-top: 20px;
+
+
+}
+
+.ck-checkout-button {
+    width: 100%;
+    padding:10px 0px 10px 0px ;
+    /*border-radius:8px;*/
+    border: 16px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ec3d47;
+}
+
+.ck-items-cart-section{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F7F9F9;
+}
+.ck-product-image{
+    height: 110px;
+}
+
+.ck-quantity-section{
+    display: flex;
+    flex-direction: row;
+}
+.quantity{
+    width: 40px;
+    height: 40px;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.total-amount-and-remove-icon{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+
+}
+.ck-product-cart-delete-icon{
+    height: 24px;
+    margin-left: 12px;
+    margin-top:10px;
+}
+.order-contact-title{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.order-address-title{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+
+}
+
+.order-condition-title{
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*@media only screen and (max-device-width: 768px){*/
+/*    .checkout-page-main-section{*/
+/*        display: block;*/
+/*    }*/
+
+/*    .checkout-order-item-list{*/
+/*        margin-top: 110px;*/
+/*    }*/
+/*    .ck-items-cart-section{*/
+/*        margin-top: 30px;*/
+/*        margin-right: 20px;*/
+/*    }*/
+/*    .ck-product-image{*/
+/*        height:80px;*/
+/*        margin-left: -60px;*/
+/*    }*/
+/*    .ck-quantity-title-with-section{*/
+/*        margin-left: -120px;*/
+/*    }*/
+/*    .ck-items-cart-section{*/
+/*        display: flex;*/
+/*        flex-direction: row;*/
+
+/*    }*/
+/*    .total-amount-and-remove-icon{*/
+/*        margin-left:-40px;*/
+/*    }*/
+
+/*}*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .checkout-page-main-section{
+        display: block;
+    }
+
+    .checkout-order-item-list{
+        margin-top: 110px;
+        width: 400px;
+
+    }
+    /*.ck-items-cart-section{*/
+    /*    margin-top: 40px;*/
+    /*    !*margin-right: 20px;*!*/
+    /*}*/
+    .ck-product-image{
+        height:70px;
+        /*margin-left: -45px;*/
+    }
+    .ck-quantity-title-with-section{
+        /*margin-left: 10px;*/
+    }
+    .ck-items-cart-section{
+
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        margin: 0 0 40px 0;
+
+    }
+    .total-amount-and-remove-icon{
+        margin-right:10px;
+    }
+    .ck-product-title{
+        font-family: 'Open Sans', sans-serif;
+        font-size:15px ;
+    }
+    .ck-product-ammount-title{
+        font-family: 'Open Sans', sans-serif;
+        font-size:15px ;
+    }
+    .ck-product-cart-delete-icon{
+        height:20px;
+
+    }
+}

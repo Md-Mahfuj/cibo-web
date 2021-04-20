@@ -9,7 +9,7 @@ export const data = [
     },
     {
 
-        name: 'Desktop'
+        name: 'computer room design'
 
     },
     {

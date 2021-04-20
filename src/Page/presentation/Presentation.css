@@ -1,6 +1,6 @@
 
 .Presentation {
-    /*margin-top: 20px;*/
+    margin-top:5px;
     background-color:#F7F8FA;
     display: flex;
 }
@@ -21,7 +21,7 @@
 .Presentation_img_section {
     width: 77%;
     /*margin-left:15px;*/
-    /*background-color: #ec3d47;*/
+    background-color: #ec3d47;
 }
 
 

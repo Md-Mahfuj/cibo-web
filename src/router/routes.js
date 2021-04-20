@@ -2,16 +2,22 @@ import React, { Component } from "react";
 import { Router, Switch, Route } from "react-router-dom";
 import App from "../App";
 import history from './history';
-import CheckPage from "../Page/ProductInfoPage/Product_Info"
+import ProductInfo from "../Page/ProductInfoPage/Product_Info"
 import Desktop from "../Page/Desktop/index"
+import Checkout from '../Page/CheckoutPage/'
+import SignIN from "../component/sign_in";
+
+
 export default class Routes extends Component {
     render() {
         return (
             <Router history={history}>
                 <Switch>
                     <Route path="/" exact component={App} />
-                    <Route path="/product/:id" component={CheckPage} />
+                    <Route path="/product/:id" component={ProductInfo} />
                     <Route path="/Desktop" component={Desktop} />
+                    <Route path="/Checkout" component={Checkout} />
+                    <Route path="/sign" component={SignIN}/>
 
                 </Switch>
             </Router>

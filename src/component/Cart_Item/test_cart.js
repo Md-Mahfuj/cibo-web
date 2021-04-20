@@ -1,17 +1,15 @@
 import React,{useState} from "react"
 import "./Shop_Cart.css"
 import { Card } from 'antd';
-import Data from "./Data"
 import Image from "../../assets/image/Image"
 import { useHistory } from "react-router";
 import {Link} from "react-router-dom"
+import {useDispatch, useSelector} from "react-redux"
 const { Meta } = Card;
 
-
-
-const ShopCart=(props)=>{
-    const [count, setCount] = useState(0);
+const TestCart=(props)=>{
     const history = useHistory();
+    const {Products} = useSelector(state => state.ProductReducer);
 
     const nextPage = (props)=>{
         // history.push(`/product/123`)
@@ -22,13 +20,13 @@ const ShopCart=(props)=>{
     return(
         <div className={"main"}>
             {
-                props.projectList.map((item)=>
+                Products.map((item)=>
                     <Link
-                       onClick={nextPage}
+                        onClick={nextPage}
                         to={`/product/${item.id}`}
 
-                       className={"main_section"}
-                       key={item.id}
+                        className={"main_section"}
+                        key={item.id}
                     >
 
 
@@ -41,16 +39,16 @@ const ShopCart=(props)=>{
                         >
                             <div  className={"main_cart"}>
                                 <img className={"Cart_imag"}
-                                     src={item.url}/>
+                                     src={Image.product1}/>
                             </div>
                             <div className={"title"}>
-                                <h5 className="main-shop-cart-title" >
+                                <h5 >
                                     {item.title}
                                 </h5>
                             </div>
 
                             <div className={"main_cart_price"}>
-                                <h6 className="main-shop-cart-title">{item.price}</h6>
+                                <h6 >{item.price}</h6>
 
                             </div>
 
@@ -63,4 +61,4 @@ const ShopCart=(props)=>{
         </div>
     );
 };
-export default ShopCart;
+export default TestCart;

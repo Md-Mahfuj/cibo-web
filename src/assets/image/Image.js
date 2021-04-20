@@ -30,6 +30,10 @@ import  product1 from "./product1.jpg"
 
 import close from './close.png'
 import homeIcon from './home-icon.ico'
+import deleteIcon from './delete.png'
+import profileIcon from './profile1.png'
+import rightArrow from './rightArrow.png'
+import acIcon from './ac_edit.png'
 
 
 const Image={
@@ -63,7 +67,11 @@ const Image={
     down,
     product1,
     close,
-    homeIcon
+    homeIcon,
+    deleteIcon,
+    profileIcon,
+    rightArrow,
+    acIcon
 
 
 
