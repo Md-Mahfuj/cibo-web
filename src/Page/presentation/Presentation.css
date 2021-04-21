@@ -7,10 +7,20 @@
 
 
 .top-category{
-    background-color:#e6e8eb;
+    background-color:#EC7063 ;
     width:265px;
+     padding:5px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: -2px;
 
 }
+.category-name{
+    font-family: 'Open Sans', sans-serif;
+    margin-left:12px;
+
+}
+
 
 .Category_section {
     width:25%;
@@ -21,7 +31,7 @@
 .Presentation_img_section {
     width: 77%;
     /*margin-left:15px;*/
-    background-color: #ec3d47;
+    /*background-color: #ec3d47;*/
 }
 
 

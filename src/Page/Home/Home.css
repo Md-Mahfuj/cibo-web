@@ -73,7 +73,7 @@
 .welcome {
     width: 182px;
     height: 16px;
-    font-family: Lato;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
@@ -117,7 +117,7 @@
     width: 158px;
     height: 16px;
     margin-top: 12px;
-    font-family: Lato;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -143,10 +143,10 @@
 }
 
 .help_title {
-    margin-top: 12px;
-    width: 82px;
-    height: 18px;
-    font-family: Lato;
+    margin-top:5px;
+    /*width: 82px;*/
+    /*height: 18px;*/
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -203,6 +203,8 @@
     margin-left: 13px;
     display: flex;
     flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -237,6 +239,8 @@
     height: 100%;
     /*border: none;*/
     background-color: #e7e7e7;
+    font-family: 'Open Sans', sans-serif;
+
     border: 1px solid red;
     text-align: center;
 

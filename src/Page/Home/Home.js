@@ -64,11 +64,11 @@ const Home = (props) => {
         <div>
             {/*start top welcome section*/}
 
-            <div className={"header_contact"}>
-                <h3 className={"welcome"}>welcome to our store</h3>
+            <div className="header_contact">
+                <h3 className="welcome">welcome to our store</h3>
                 <div className="phome_section">
                     <img className="phone_img" src={Image.phone}/>
-                    <h4 className={"number"}> Call Us: 0162 735 2018</h4>
+                    <h4 className="number"> Call Us: 0162 735 2018</h4>
 
                 </div>
                 <div className="spece"></div>

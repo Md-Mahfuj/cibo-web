@@ -24,8 +24,8 @@ const Shop = [
         title: 'bangladesh is big city',
         price: "BDT-200",
         spePrice: "10",
-        url:"https://lh3.googleusercontent.com/proxy/goZXt0b5CvXFda8JC_LIjBx9mJjoFuIja6XbNHJghkNr8yOX6qFlWg6dFQBUcyw1pNvgDjfJ03cpsQzMA9rNmfmPu1by9A2T6yC94l62CUnf6oFzOmV8jf4ReZm0BVfy4eh_gQrbE2vhu_PLr3eDEhz9uxjQwA",
-
+        // url:"https://lh3.googleusercontent.com/proxy/goZXt0b5CvXFda8JC_LIjBx9mJjoFuIja6XbNHJghkNr8yOX6qFlWg6dFQBUcyw1pNvgDjfJ03cpsQzMA9rNmfmPu1by9A2T6yC94l62CUnf6oFzOmV8jf4ReZm0BVfy4eh_gQrbE2vhu_PLr3eDEhz9uxjQwA",
+        url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxrE_-49XAP6aIZN-XBE9EO9bRbOBQjFpv9cIueaeG3xh5GL0g8uPTqoAjmIDBfK62JU&usqp=CAU"
     },
     {
         id: '4',

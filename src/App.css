@@ -6,7 +6,12 @@
 
 .App {
   text-align: center;
+
 }
+/*body{*/
+/*  background-color: #F7F8FA;*/
+
+/*}*/
 
 .App-logo {
   height: 40vmin;
@@ -27,7 +32,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #F7F8FA;
 }
 
 .App-link {

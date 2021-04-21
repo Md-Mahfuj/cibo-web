@@ -22,7 +22,10 @@ const Presentation = (props) => {
              {/*start left side  category section */}
 
             <div className="Category_section">
-                <h4 className="top-category">Top Category</h4>
+                <div className="top-category" >
+                    <h4 className="category-name" >Top Category</h4>
+                </div>
+
                 <Category cate={cate}/>
 
             </div>

@@ -2,6 +2,8 @@
 
 .contant{
     background-color:#F7F8FA;
+
+    margin-bottom: 150px;
 }
 
 
@@ -9,7 +11,7 @@
     /*margin-top: 25px;*/
     /*margin-bottom: 25px;*/
     padding: 25px;
-    font-size: 18px;
+    font-size:21px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;

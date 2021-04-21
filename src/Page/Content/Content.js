@@ -16,7 +16,7 @@ const Content=(props)=>{
     return(
 
         <div className="container contant ">
-            <h4 className="Fashion_title" >Computer Room design</h4>
+            <h4 className="Fashion_title" >Fashion For Men </h4>
 
             {/*start computer arrary list */}
 
@@ -24,7 +24,7 @@ const Content=(props)=>{
 
             {/*end computer arrary list of product*/}
 
-            <h4 className="Fashion_title">Fashion For Men</h4>
+            <h4 className="Fashion_title">Computer design</h4>
 
             {/*start men  fashion arrary list of product */}
 
@@ -37,9 +37,9 @@ const Content=(props)=>{
 
 
 
-            <h4 className="Fashion_title">bag</h4>
+            {/*<h4 className="Fashion_title">bag</h4>*/}
 
-            <TestCart/>
+            {/*<TestCart/>*/}
 
         </div>
 
