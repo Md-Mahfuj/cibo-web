@@ -7,6 +7,8 @@ import Desktop from "../Page/Desktop/index"
 import Checkout from '../Page/CheckoutPage/'
 import SignIN from "../component/sign_in";
 
+import KisiPage from './../Page/Kisi_page'
+
 
 export default class Routes extends Component {
     render() {
@@ -18,6 +20,7 @@ export default class Routes extends Component {
                     <Route path="/Desktop" component={Desktop} />
                     <Route path="/Checkout" component={Checkout} />
                     <Route path="/sign" component={SignIN}/>
+                    <Route path="/kisi" component={KisiPage}/>
 
                 </Switch>
             </Router>

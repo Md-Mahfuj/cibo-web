@@ -7,8 +7,9 @@
 
 
 .top-category{
-    background-color:#EC7063 ;
+    /*background-color:#EC7063 ;*/
     width:265px;
+    color: #404040;
      padding:5px;
     margin-top: -5px;
     margin-bottom: -5px;

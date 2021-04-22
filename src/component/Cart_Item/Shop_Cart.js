@@ -20,7 +20,7 @@ const ShopCart=(props)=>{
 
 
     return(
-        <div className={"main"}>
+        <div className="main">
             {
                 props.projectList.map((item)=>
                     <Link

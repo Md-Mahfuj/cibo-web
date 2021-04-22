@@ -23,7 +23,7 @@ const Presentation = (props) => {
 
             <div className="Category_section">
                 <div className="top-category" >
-                    <h4 className="category-name" >Top Category</h4>
+                    <h4 className="category-name" >TOP CATEGORY</h4>
                 </div>
 
                 <Category cate={cate}/>
