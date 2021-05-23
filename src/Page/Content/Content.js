@@ -17,8 +17,9 @@ const Content=(props)=>{
     return(
 
         <div className="container contant ">
-            <h4 className="Fashion_title" >বাংলাদেশ কৃষি</h4>
-            <KisiCard/>
+            {/*<h4 className="Fashion_title" >বাংলাদেশ কৃষি</h4>*/}
+            {/*<KisiCard/>*/}
+
 
             <h4 className="Fashion_title" >Fashion For Men </h4>
 

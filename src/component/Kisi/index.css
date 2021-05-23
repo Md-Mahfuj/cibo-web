@@ -62,8 +62,10 @@
 
     .kisi-card-main-section{
 
-        width: 155px;
-        height:200px;
+        width:140px;
+        /*height:200px;*/
         margin-top: 10px;
+
+
     }
 }

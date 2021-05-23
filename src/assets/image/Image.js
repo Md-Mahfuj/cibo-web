@@ -34,6 +34,7 @@ import deleteIcon from './delete.png'
 import profileIcon from './profile1.png'
 import rightArrow from './rightArrow.png'
 import acIcon from './ac_edit.png'
+import downArrow from './dwonArrow.png'
 
 
 const Image={
@@ -71,7 +72,8 @@ const Image={
     deleteIcon,
     profileIcon,
     rightArrow,
-    acIcon
+    acIcon,
+    downArrow
 
 
 

@@ -3,20 +3,167 @@
 .kisi-main-page-section{
     display: flex;
     flex-direction: row;
+    margin-bottom: 100px;
 }
 
 .kisi-main-lift-section{
-    background-color: #61dafb;
-    width: 70%;
+    /*background-color: #61dafb;*/
+    width: 75%;
     margin-left: -15px;
+}
+.kisi-content-section{
+    margin-left: -19px;
 }
 
 
 .kisi-main-right-section{
-    background-color: #ec3d47;
-    width: 35%;
+    width: 30%;
+    /*background-color: #ec3d47;*/
+
     margin-left: 40px;
     margin-right: -15px;
     /*margin-right: -30px;*/
+
+}
+
+
+/*kisi-course-card*/
+
+.kisi-course-card-main{
+}
+.kisi-course-card{
+    margin-left:5px;
+    width:290px ;
+    height:50px;
+    cursor: pointer;
+    /*background-color:#D6EAF8;*/
+    background-color: #F4F6F6;
+
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-between;
+
+
+}
+
+.kisi-course-count-number{
+    /*padding:5px;*/
+    padding: 2px 11px 5px 12px;
+
+    background-color: #FFFFFF;
+    border-radius:8px;
+}
+
+.kisi-shikha-title{
+    margin-left: 15px;
+    margin-top:4px;
+    color:#F11348 ;
+}
+.kisi-video-courses-title{
+    margin-left:45px;
+    margin-top: -8px;
+    color:#267BDE ;
+}
+
+
+.kisi-banner-section{
+    width: 800px;
+    /*margin-left: 40px;*/
+    height: 370px;
+    margin-top:2px;
+    background-color:#F4F6F7 ;
+
+}
+
+.kisi-banner-image{
+    width:100%;
+    height:270px;
+    /*margin-top: 10px;*/
+    /*margin-left: 10px;*/
+}
+
+.kisi-banner-title{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+}
+.kisi-banner-title-one{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -5px;
+    margin-left: 10px;
+
+}
+
+.kisi-model-price{
+    margin-top: -20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+}
+
+.kisi-details-page-product-title{
+    margin-top:40px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    margin-left:20px;
+
+}
+
+.kisi-course-arrow-icon{
+    height: 16px;
+    object-fit: contain;
+    margin-right:10px ;
+}
+.kisi-course-title{
+    margin-left: 10px;
+}
+.kisi-course-title-section{
+    display: flex;
+    margin-top: 7px;
+    margin-left: 5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*model*/
+
+.course-open{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.course-close{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+}
+
+.kisi-course-player-section{
+    height: 477px;
+    background-color: #071246;
+
+}
+.kisi-iframe{
+    width:90%;
+    margin-left: 40px;
+    margin-top: 27px;
+    height: 450px;
+
 
 }

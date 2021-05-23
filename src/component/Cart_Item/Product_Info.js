@@ -32,7 +32,7 @@ const CheckOut = (props) => {
             <div className="CheckOut_main_item">
                 <div>
                     {/*<img className="check_img" src={Image.beg}/>*/}
-                    <img className="check_img" src="https://scontent.fcgp17-1.fna.fbcdn.net/v/t1.6435-9/171301829_4149385121792387_3569153883403158472_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=b9115d&_nc_ohc=A8UpY4Ko4WYAX9Umc5f&_nc_ht=scontent.fcgp17-1.fna&oh=da0f480d670b2e4577a86c10554c2fd1&oe=60A68B70" />
+                    <img className="check_img" src="https://i.pinimg.com/736x/78/7e/22/787e22bcbf5f4d415fb0fefb052389c5.jpg" />
 
                     <div className="img_items">
                         <img className="check_imgs" src={Image.beg}/>

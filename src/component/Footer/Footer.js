@@ -6,7 +6,7 @@ import Image from '../../assets/image/Image'
 
 const Footer = () => {
     return (
-        <div className="container footer_main">
+        <div className=" footer_main">
 
 
             <div className="footer_web_section">
