@@ -115,6 +115,7 @@ const Home = (props) => {
                         Short Description of<br/>
                         Cibo online store</p>
                 </div>
+
                 <div className="search_section">
                     <input className="search" type="search" placeholder="search for.... "/>
 

@@ -115,8 +115,8 @@
     display: flex;
 }
 .check_button{
-
     padding: 10px 110px 10px 110px;
+
     border-radius:8px;
     border: 16px;
     font-family: Lato;
@@ -167,17 +167,29 @@
     }
 
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 640px){
+
+
+
+/*befor only screen and (min-device-width : 320px) and (max-device-width : 640px)*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
 
 
     .CheckOut_main_item{
-        margin-top:80px;
+        margin-top:40px;
         display: block;
     }
     .check_img{
         margin-top: 30px;
-        width:380px;
+        width:330px;
         height:380px;
+    }
+    .product_and_images{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
     }
     .check_buttons{
         display: flex;
@@ -188,8 +200,14 @@
         /*align-content: stretch;*/
         /*margin-bottom:-20px;*/
     }
+    .check_button{
+        padding: 10px 70px 10px 70px;
+
+    }
     .img_items{
         /*justify-content: center;*/
+        margin-left: 0px;
+        margin-top: 20px;
 
     }
 

@@ -133,14 +133,14 @@ const test=[
 
     },
 
-    // {
-    //     id: '4',
-    //     title: 'bang  is big city',
-    //     price: "BDT-50",
-    //     spePrice: "100",
-    //     url: "www.mahfuj.com"
-    //
-    // },
+    {
+        id: '4',
+        title: 'bang  is big city',
+        price: "BDT-50",
+        spePrice: "100",
+        url: "www.mahfuj.com"
+
+    },
     // {
     //     id: '5',
     //     title: 'bang',

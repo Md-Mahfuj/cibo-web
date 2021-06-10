@@ -494,23 +494,25 @@
     }
 
     .header_sectionTwo {
-        position: fixed;
+        /*position: fixed;*/
+        display: none;
     }
 
 
     .mobile_divice-section {
+        margin-top: 10px;
+
 
         display: flex;
         position: fixed;
+
         /*padding:0 0 50px 0;*/
 
         /*background-color:wheat;*/
     }
 
     .search_section_mobile {
-        margin-top: 70px;
-        margin-left: 30px;
-        width: 300px;
+        /*width: 280px;*/
         height: 54px;
         /*background-color: #fbfbfb;*/
 
@@ -518,7 +520,8 @@
     }
 
     .search_mobile {
-        width: 255px;
+
+        width: 225px;
         margin-top: -10px;
         height: 100%;
         /*border: none;*/
@@ -530,8 +533,9 @@
 
     .menu {
         display: flex;
-        margin-left: 5px;
-        margin-top: 85px;
+        /*margin-left: -5px;*/
+        margin-right:15px;
+        margin-top: 10px;
 
         width: 25px;
         height: 25px;

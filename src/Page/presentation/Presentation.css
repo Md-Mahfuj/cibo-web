@@ -106,7 +106,7 @@
     }
     .Presentation_img_section{
         width: 100%;
-        margin-top:150px;
+        margin-top:80px;
 
     }
     .slider_img{
@@ -118,16 +118,17 @@
         display: block;
     }
     .future_img{
-        width:382px;
+        width:320px;
+        margin-right: 5px;
         height: 120px;
         border-radius:5px;
     }
     .future_img_two{
-        width:382px;
+        width:320px;
         height: 120px;
         border-radius:5px;
-        margin-left:-0px;
-        margin-top:-0px;
+        /*margin-left:-0px;*/
+        /*margin-top:-0px;*/
 
     }
 

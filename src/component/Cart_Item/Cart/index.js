@@ -64,6 +64,20 @@ const Cart = (props) => {
                 </div>
 
                 <div>
+
+                    {/*<div className="price-label">*/}
+                    {/*    <p>Subtotal</p>*/}
+                    {/*    <p>47668</p>*/}
+                    {/*</div>*/}
+                    {/*<div className="price-label">*/}
+                    {/*    <p>Shipping</p>*/}
+                    {/*    <p>0</p>*/}
+                    {/*</div>*/}
+                    {/*<div className="price-label">*/}
+                    {/*    <p>Total</p>*/}
+                    {/*    <p>47668</p>*/}
+                    {/*</div>*/}
+
                     <div className="cart-total-price-section">
 
                         <div className="cart-total-text-section">

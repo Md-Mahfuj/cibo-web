@@ -30,7 +30,7 @@ const CheckOut = (props) => {
 
         >
             <div className="CheckOut_main_item">
-                <div>
+                <div className="product_and_images">
                     {/*<img className="check_img" src={Image.beg}/>*/}
                     <img className="check_img" src="https://i.pinimg.com/736x/78/7e/22/787e22bcbf5f4d415fb0fefb052389c5.jpg" />
 
@@ -62,7 +62,7 @@ const CheckOut = (props) => {
                         </div>
 
                     </div>
-                    <p>{JSON.stringify(products)}</p>
+                    {/*<p>{JSON.stringify(products)}</p>*/}
 
 
                     {/*<div className="product-color-section">*/}
