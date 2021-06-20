@@ -4,13 +4,18 @@ import Data from "../../component/Cart_Item/Data";
 import ShopCart from "../../component/Cart_Item/Shop_Cart"
 import CheckOut from "../../component/Cart_Item/Product_Info"
 import TestCart from "../../component/Cart_Item/test_cart";
-import KisiCard from "../../component/Kisi/Kisi_homeCard"
+import KisiCard from "../../component/Kisi/Kisi_homeCard";
+
+import {useDispatch, useSelector} from "react-redux"
 
 const Content=(props)=>{
+    const {Products} =useSelector(state=>state.ProductReducer);
     const [projectList, setShop] = useState(Data.Shop);
+
     const [project1, setShop1] = useState(Data.Shop1);
 
-    console.log(Data.Shop);
+    // console.log(Data.Shop);
+    // console.log(Products);
 
 
 
@@ -33,7 +38,7 @@ const Content=(props)=>{
 
             {/*start men  fashion arrary list of product */}
 
-            <ShopCart projectList={project1}  />
+            <ShopCart projectList={Products}  />
 
             {/*end  men  fashion arrary list of product */}
 

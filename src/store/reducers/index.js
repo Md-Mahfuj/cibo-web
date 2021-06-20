@@ -1,13 +1,15 @@
 import {createStore,combineReducers} from "redux"
 import rootReducer from "./rootReducer";
-import ProductReducer from './ProductReducer'
-
+import ProductReducer from './ProductReducer'; 
+import CartReducer from "./CartReducer"
 
 import { devToolsEnhancer } from 'redux-devtools-extension';
 
+
 const root = combineReducers({
     ProductReducer:ProductReducer,
-    rootReducer:rootReducer
+    rootReducer:rootReducer,
+    CartReducer:CartReducer
 });
 
 

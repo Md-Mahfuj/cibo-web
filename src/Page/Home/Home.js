@@ -5,11 +5,14 @@ import Image from "../../assets/image/Image"
 import search from '../../assets/image/search.png'
 import CartT from "../../component/Cart_Item/Cart"
 import {useHistory} from "react-router";
+import {useSelector} from "react-redux";
 import '../Layout/Layout.css'
 import acIcon from "../../assets/image/ac_edit.png";
 import rightArrow from "../../assets/image/rightArrow.png";
+import CartReducer from "../../store/reducers/CartReducer";
 
 const Home = (props) => {
+    const {totalQuantities} =useSelector(state=>state.CartReducer);
     const [projectList, setShop] = useState(Data.Shop);
     const [loginClose, setLoginClose] = useState(false);
     const [cartClose, setCartClose] = useState(false);
@@ -130,7 +133,10 @@ const Home = (props) => {
 
 
                     <a onClick={() => setCartClose(!cartClose)} className="account-one cart_img">
+                        <p>{totalQuantities}</p>
                         <img className="account_img" src={Image.cart2}/>
+
+
 
                         {/*<ShoppingCartOutlined  className="cart_img"/>*/}
 

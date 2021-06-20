@@ -1,4 +1,4 @@
-import React from "react"
+import React,{useState} from "react"
 import "./Product_Info.css"
 import Image from "../../assets/image/Image"
 import {Button} from "antd";
@@ -6,23 +6,28 @@ import {useDispatch, useSelector} from "react-redux";
 import { addToCart } from "../../store/action/actionType";
 
 const CheckOut = (props) => {
-    const {product} = props;
-    const products = useSelector(state => state.ProductReducer.Products);
+    const {product}=props;
+    const [quantity,setQuantity]=useState(1);
     const dispatch = useDispatch();
-
-    const addCart=()=>{
-        const data={
-            id: '5',
-            title: 'bang',
-            price: "BDT-00",
-            spePrice: "100",
-            url: "www.mahfuj.com"
-
-        };
-
-        dispatch(addToCart(data))
-
+    const deQuantity=()=>{
+        if(quantity > 1){
+            setQuantity(quantity-1);
+        }
     }
+
+    // const addCart=()=>{
+    //     const data={
+    //         id: '5',
+    //         title: 'bang',
+    //         price: "BDT-00",
+    //         spePrice: "100",
+    //         url: "www.mahfuj.com"
+    //
+    //     };
+    //
+    //     dispatch(addToCart(data))
+    //
+    // }
 
     return (
         <div style={{marginTop: 5}}
@@ -32,7 +37,7 @@ const CheckOut = (props) => {
             <div className="CheckOut_main_item">
                 <div className="product_and_images">
                     {/*<img className="check_img" src={Image.beg}/>*/}
-                    <img className="check_img" src="https://i.pinimg.com/736x/78/7e/22/787e22bcbf5f4d415fb0fefb052389c5.jpg" />
+                    <img className="check_img" src={product.url} />
 
                     <div className="img_items">
                         <img className="check_imgs" src={Image.beg}/>
@@ -49,13 +54,13 @@ const CheckOut = (props) => {
                         <div>
                             <h5>Distributor: </h5>
                             <h5>Product Code: </h5>
-                            <h5>Availability: </h5>
-                            <h5>BDT:</h5>
+                            <h5>price: </h5>
+                            <h5>spePrice:</h5>
 
                         </div>
                         <div className="detills_itemsTwo">
                             <h5>Unknown</h5>
-                            <h5>{product.color} </h5>
+                            <h5>red</h5>
                             <h5>{product.price}</h5>
                             <h5>{product.spePrice}</h5>
 
@@ -93,9 +98,9 @@ const CheckOut = (props) => {
                         <h4 className="quantity-title">Quantity:</h4>
 
                         <div className="de-quantity-section">
-                            <span className="quantity">-</span>
-                            <span className="quantity">6</span>
-                            <span className="quantity">+</span>
+                            <span onClick={deQuantity} className="quantity">-</span>
+                            <span className="quantity">{quantity}</span>
+                            <span onClick={()=>setQuantity(quantity+1)} className="quantity">+</span>
                         </div>
 
                         {/*<div className="Quantity">*/}
@@ -111,7 +116,14 @@ const CheckOut = (props) => {
 
 
                     <div className="check_buttons">
-                        <Button onClick={addCart} className="check_button"><img className="check_outCart" src={Image.cart2}/>ADD TO CART</Button>
+                        <Button
+                            // onClick={addCart}
+                            onClick={()=>dispatch({type:'ADD_TO_CART',payload:{product,quantity}})}
+
+
+                            className="check_button"><img className="check_outCart" src={Image.cart2}/>ADD TO CART</Button>
+
+
                         {/*<Button className="check_button"><img className="check_outCart" src={Image.cart2}/>buy</Button>*/}
 
 
