@@ -25,10 +25,10 @@ const ShopCart=(props)=>{
                 props.projectList.map((item)=>
                     <Link
                        onClick={nextPage}
-                        to={`/product/${item.id}`}
+                        to={`/product/${item._id}`}
 
                        className={"main_section"}
-                       key={item.id}
+                       key={item._id}
                     >
 
 
@@ -41,11 +41,11 @@ const ShopCart=(props)=>{
                         >
                             <div  className={"main_cart"}>
                                 <img className={"Cart_imag"}
-                                     src={item.url}/>
+                                     src={item.image}/>
                             </div>
                             <div className={"title"}>
                                 <h5 className="main-shop-cart-title" >
-                                    {item.title}
+                                    {item.name}
                                 </h5>
                             </div>
 

@@ -14,11 +14,11 @@ const CartReducer = (state = initState, action) => {
     switch(action.type){
         case 'ADD_TO_CART':
             const {product,quantity} = action.payload;
-            const check = state.products.find(pr => pr.id === product.id);
+            const check = state.products.find(pr => pr._id === product._id);
             if(check){
                 return state;
             } else {
-                const Tprice = state.totalPrice + product.spePrice * quantity;
+                const Tprice = state.totalPrice + product.price * quantity;
                 const Tquantities = state.totalQuantities + quantity;
                 product.quantity = quantity;
                 return {
@@ -38,10 +38,10 @@ const CartReducer = (state = initState, action) => {
         //         totalPrice: state.totalPrice + findPro.spePrice, totalQuantities: state.totalQuantities+1
         //     }
         case 'INC':
-            findPro = state.products.find(product => product.id === action.payload);
-            index = state.products.findIndex(product => product.id === action.payload);
+            findPro = state.products.find(product => product._id === action.payload);
+            index = state.products.findIndex(product => product._id === action.payload);
             findPro.quantity += 1;
-            var T =findPro.spePrice*findPro.quantity;
+            var T =findPro.price*findPro.quantity;
             state.products[index] = findPro;
             return {
                 ...state,
@@ -49,25 +49,25 @@ const CartReducer = (state = initState, action) => {
             }
 
         case "DEC":
-            findPro = state.products.find(product => product.id === action.payload);
-            index = state.products.findIndex(product => product.id === action.payload);
+            findPro = state.products.find(product => product._id === action.payload);
+            index = state.products.findIndex(product => product._id === action.payload);
             if(findPro.quantity > 1){
                 findPro.quantity -= 1;
                 state.products[index] = findPro;
                 return {
                     ...state,
-                    totalPrice: state.totalPrice - findPro.spePrice, totalQuantities: state.totalQuantities - 1
+                    totalPrice: state.totalPrice - findPro.price, totalQuantities: state.totalQuantities - 1
                 }
             } else {
                 return state;
             }
         case 'REMOVE':
-            findPro = state.products.find(product => product.id === action.payload);
-            const filtered = state.products.filter(product => product.id !== action.payload);
+            findPro = state.products.find(product => product._id === action.payload);
+            const filtered = state.products.filter(product => product._id !== action.payload);
             return {
                 ...state,
                 products: filtered,
-                totalPrice: state.totalPrice - findPro.spePrice * findPro.quantity, totalQuantities: state.totalQuantities - findPro.quantity
+                totalPrice: state.totalPrice - findPro.price * findPro.quantity, totalQuantities: state.totalQuantities - findPro.quantity
             }
         default:
             return state;

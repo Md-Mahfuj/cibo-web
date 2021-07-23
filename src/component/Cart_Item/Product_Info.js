@@ -37,7 +37,7 @@ const CheckOut = (props) => {
             <div className="CheckOut_main_item">
                 <div className="product_and_images">
                     {/*<img className="check_img" src={Image.beg}/>*/}
-                    <img className="check_img" src={product.url} />
+                    <img className="check_img" src={product.image} />
 
                     <div className="img_items">
                         <img className="check_imgs" src={Image.beg}/>
@@ -48,21 +48,21 @@ const CheckOut = (props) => {
                 </div>
 
                 <div className="check_mainList">
-                    <h4>{product.title}</h4>
+                    <h4>{product.name}</h4>
 
                     <div className="detills_items">
                         <div>
                             <h5>Distributor: </h5>
                             <h5>Product Code: </h5>
                             <h5>price: </h5>
-                            <h5>spePrice:</h5>
+                            {/*<h5>spePrice:</h5>*/}
 
                         </div>
                         <div className="detills_itemsTwo">
                             <h5>Unknown</h5>
                             <h5>red</h5>
                             <h5>{product.price}</h5>
-                            <h5>{product.spePrice}</h5>
+                            {/*<h5>{product.spePrice}</h5>*/}
 
                         </div>
 

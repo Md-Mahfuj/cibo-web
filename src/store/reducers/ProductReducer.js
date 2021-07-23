@@ -12,7 +12,7 @@ function ProductReducer(state = initialState, action) {
     switch (action.type) {
 
         case "PRODUCT":
-            return {...state, product: state.Products.find(product => product.id === action.id)}
+            return {...state, product: state.Products.find(product => product._id === action._id)}
         case "ADD_TO_CART" :
             return {...state, Products: [...state.Products, action.payload]}
         default:

@@ -36,35 +36,35 @@ const Cart = (props) => {
                                     products.map(item => {
                                         return (
                                             <div>
-                                                <div key={item.id} className="my-cart-main-section">
+                                                <div key={item._id} className="my-cart-main-section">
                                                     <div>
-                                                        <img className="product-cart-image" src={item.url}/>
+                                                        <img className="product-cart-image" src={item.image}/>
 
                                                     </div>
                                                     <div className="cart-title-and-increase-section">
-                                                        <p className="cart-level">{item.title} </p>
+                                                        <p className="cart-level">{item.name} </p>
                                                         <div className="product-cart-price-and-quntity">
-                                                            <p className="product-cart-price">{item.spePrice}</p>
+                                                            <p className="product-cart-price">{item.price}</p>
                                                             <p className="product-cart-price">X {item.quantity}</p>
-                                                            <p className="product-cart-price">={item.spePrice * item.quantity}</p>
+                                                            <p className="product-cart-price">={item.price * item.quantity}</p>
 
                                                         </div>
                                                         <div className="product-increase-section">
 
                                                             <span onClick={() => dispatch({
                                                                 type: 'DEC',
-                                                                payload: item.id
+                                                                payload: item._id
                                                             })} className="cart-down-quantity">-</span>
                                                             <span className="cart-down-quantity">{item.quantity}</span>
                                                             <span onClick={() => dispatch({
                                                                 type: 'INC',
-                                                                payload: item.id
+                                                                payload: item._id
                                                             })} className="cart-down-quantity">+</span>
                                                         </div>
 
                                                     </div>
                                                     <div className="product-delete-section"
-                                                         onClick={() => dispatch({type: 'REMOVE', payload: item.id})}>
+                                                         onClick={() => dispatch({type: 'REMOVE', payload: item._id})}>
                                                         <img className="product-cart-delete-icon"
                                                              src={Image.deleteIcon}/>
 
